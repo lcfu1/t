@@ -1,0 +1,10 @@
+<apps>
+  <app>
+    <id>1</id>
+    <name>AA</name>
+  </app>
+  <app>
+    <id>2</id>
+    <name>BB</name>
+  </app>
+</apps>
