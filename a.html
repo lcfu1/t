@@ -123,9 +123,10 @@
 &lt;textarea id=&quot;text&quot; rows=&quot;20&quot; cols=&quot;80&quot;&gt;
 &lt;/textarea&gt;
 	&lt;p id=&quot;name&quot;&gt;粘贴内容到上方文本框中&lt;/p&gt;
-&lt;button onclick=&quot;displayDate()&quot;&gt;点这里获取名字&lt;/button&gt;
+&lt;button onclick=&quot;show()&quot;&gt;点这里获取名字&lt;/button&gt;
+&lt;button onclick=&quot;cleartext()&quot;&gt;重置&lt;/button&gt;
 &lt;script&gt;
-function displayDate(){
+function show(){
 	var jsonstr = document.getElementById(&quot;text&quot;).value;
 	var json2 = JSON.parse(jsonstr);
 	var a=&quot;&quot;
@@ -135,6 +136,10 @@ function displayDate(){
     	a = a + b + &quot;、&quot;
 	}
 	document.getElementById(&quot;name&quot;).innerHTML=a;
+}
+function cleartext(){
+	document.getElementById(&quot;text&quot;).value =&quot;&quot;;
+	document.getElementById(&quot;name&quot;).innerHTML=&quot;粘贴内容到上方文本框中&quot;;
 }
 &lt;/script&gt;
 	
